@@ -26,7 +26,7 @@ RegisterNumber:  212222230037
 ```
 
 ## Sourcecode.java:
-```Python
+```java
 public class Student
 {
     String name,address;
