@@ -1,18 +1,23 @@
-# Ex.No:2(A)  STATIC METHOD
+# Ex.No:2(B) ACCESS MODIFIERS
 
 ## AIM:
-To create a java program for calculate cube of a number using static method.
+To develop a Java Program to display the addition number using private modifiers only.
 
 ## ALGORITHM :
-1.  Start : Begin the process of calculating the cube of a number.
-2.	Declare a variable to store input : Declare an integer variable n to hold the number whose cube will be calculated.
-3.	Create a Scanner object : Create a Scanner object (sc) to read the input from the user.
-4.	Read input from the user : Prompt the user to input an integer value. The input value is stored in the variable n.
-5.	Call the cubecal function : Call the function cubecal(n) which computes the cube of the number by performing n * n * n.
-6.	Store the result : Store the result of the cubecal function in an integer variable result.
-7.	Output the result :
-8.	Print the cube of the number using System.out.println("Cube is: " + result);.
-9.	End the program.
+1.	Start the program.
+2.	Define a class named `addition`
+3.	Declare two private integer variables, `num1` and `num2`
+4.	Define a private method `add()` that:
+a)	Returns the sum of `num1` and `num2`
+5.	Define a public method `display(int n1, int n2)` that:
+a)	Assigns `n1` to `num1` and `n2` to `num2`
+b)	Calls the `add()` method and prints the result using `System.out.println`
+6.	Define the `main` method as static
+a)	Create an instance of the `addition` class called `ad`
+b)	Call the `display(8, 9)` method on the `ad` object
+7.	End
+
+
 
 
 
@@ -20,37 +25,37 @@ To create a java program for calculate cube of a number using static method.
 ## PROGRAM:
  ```
 /*
-Program to implement a Static method using Java
+Program to implement a access modifiers using Java
 Developed by: Gokul M
 RegisterNumber: 212222230037
 */
 ```
 
 ## Sourcecode.java:
-
 ```java
-import java.util.Scanner;
-
-public class CubeCalculator {
-
-    public static int calculateCube(int number) {
-        return number * number * number;
+public class A
+{ 
+    private void display() 
+    { 
+        int a=8,b=9;
+        System.out.println(a+b); 
     }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int inputNumber = scanner.nextInt();
-        int cube = calculateCube(inputNumber);
-        System.out.println("Cube is: " + cube);
-
-        scanner.close();
+    public static void main(String args[])
+    {
+        A obj= new A();
+        obj.display();
     }
 }
 ```
+
+
 ## OUTPUT:
+```
+Expected    Got 
 
-![image](https://github.com/user-attachments/assets/eccb37ec-b9d8-4a13-89d1-2c85460f77f2)
-
+17          17
+```
 
 ## RESULT:
-Thus the java program for calculate cube of a number using static method has been executed successfully.
+Thus the java program to display the addition number using private modifiers only was executed successfully.
+
